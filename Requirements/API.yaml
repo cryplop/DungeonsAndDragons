@@ -1,0 +1,17 @@
+swagger: "2.0"
+info:
+  title: API D&D
+  description: Создавай миры, собирай партии и отправляйся в путешествие по миру D&D.
+  version: 0.0.1
+host: api.example.com
+schemes:
+  - https
+paths:
+  /createCharacter:
+    post:
+      summary: Создать нового персонажа D&D
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK

@@ -1,0 +1,17 @@
+{
+  "ForestGnome":{
+    "raceAbility": {
+      "intelligence": 2,
+      "dexterity": 1
+    },
+    "photo": [
+      "1.jpeg", "2.jpeg"
+    ]
+  },
+  "RockGnome": {
+    "raceAbility": {
+      "intelligence": 2,
+      "constitution": 1
+    }
+  }
+}

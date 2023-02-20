@@ -1,0 +1,53 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Uses
+class Character
+class Party
+class World
+class Race
+class ClassDD
+class Upgrade
+
+
+Uses *-- Party
+Uses *-- Character
+Party --* World
+Uses -- Role
+Character *-- Upgrade
+Upgrade --* ClassDD
+class Uses {
+login
+role
+}
+class World {
+name
+}
+class Party {
+name
+}
+class Character {
+    name
+    createCharacter()
+    upgradeCharacter()
+}
+class Upgrade {
+    classDD
+    level
+    characteristic
+    Увеличить характеристики()
+    Увеличить HP()
+}
+
+enum Characteristic{
+    Сила
+    Ловкость
+    Телосложение
+    и т.д.
+}
+enum Role {
+adventurer
+master
+}
+
+@enduml

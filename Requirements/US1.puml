@@ -1,0 +1,84 @@
+@startuml
+(*) --> "
+    {{
+        salt
+        {+
+            [choose a race]
+            [choose a class]
+            [choose a background]
+            [choose a feat]
+            [determine ability scopes]
+            [choose  equipment]
+            [finishing details]
+        }
+    }}
+    " as chooseRace
+
+chooseRace -right-> "
+    {{
+        salt
+        {+
+            () People | <color:blue>more
+            () Half-orc | <color:blue>more
+            [Ok]
+        }
+    }}
+" as race
+
+race -right-> chooseRace
+
+race -right-> "
+    {{
+        salt
+        {+
+
+        }
+    }}
+" as raceMore
+note right
+    Экран отображения
+    информации о расе
+end note
+
+chooseRace --> "
+                {{
+                    salt
+                    {+
+                        RACE | <color:blue>change
+                        [choose a class]
+                        [choose a background]
+                        [choose a feat]
+                        [determine ability scopes]
+                        [choose  equipment]
+                        [finishing details]
+                    }
+                }}
+                " as chooseClass
+
+chooseClass -right-> "
+    {{
+        salt
+        {+
+            () wizard | <color:blue>more
+            () warrior | <color:blue>more
+            [Ok]
+        }
+    }}
+" as classdd
+classdd -left-> chooseClass
+
+classdd -right-> "
+    {{
+        salt
+        {+
+
+        }
+    }}
+" as classMore
+note right
+    Экран отображения
+    информации о классе
+    ТУТ НУЖНО что-то выбирать?!
+end note
+chooseClass --> (*)
+@enduml

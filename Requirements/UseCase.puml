@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+left to right direction
+
+note "Низкий приоритет" as P3
+note "Средний приоритет" as P2
+note "Высокий приоритет" as P1
+
+"Приключенец" as adventurer
+"Мастер" as master
+
+"Смотреть информацию об игре" as (seeManual)
+(seeManual) .. P3
+
+"Создать персонажа" as (createCharacter)
+(createCharacter) .. P1
+
+"Выполнить проверку характеристик" as (roll)
+(roll) .. P2
+"Создать мир" as (createWorld)
+(createWorld) .. P2
+
+master --> (seeManual)
+adventurer --> (seeManual)
+adventurer --> (createCharacter)
+master --> (createWorld)
+master --> (roll)
+adventurer --> (roll)
+@enduml
+
+@startmindmap
+* Смотреть информацию об игре
+** Смотреть список рас
+** Смотреть информацию о выбранной расе
+** Смотреть список классов
+@endmindmap

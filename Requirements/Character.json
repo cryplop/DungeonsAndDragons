@@ -1,0 +1,55 @@
+{
+  "name": "Кансиф",
+  "level": 4,
+  "race": "Half-orc",
+  "ability": {
+    "strength": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "charisma": 0
+  },
+  "skills":{
+    "acrobatics": false,
+    "animalHanding": false,
+    "arcana": false,
+    "athletics": false,
+    "deception": false,
+    "history": false,
+    "insight": false,
+    "intimidation": false,
+    "medicine": false,
+    "nature": false,
+    "perception": false,
+    "performance": false,
+    "persuasion":false,
+    "religion": false,
+    "sleightOfHand": false,
+    "stealth": false,
+    "survival": false
+  },
+  "classes": [
+    {
+      "class":"paladin",
+      "level": 4
+    },
+    {
+      "class":"monah",
+      "level": 1
+    }
+  ],
+  "upgrade": [
+    {
+      "level": 1,
+      "class": "1",
+      "inside": 10
+    },
+    {
+      "level": 2,
+      "class": "1",
+      "inside": 10
+    }
+  ],
+  "spells": []
+}
